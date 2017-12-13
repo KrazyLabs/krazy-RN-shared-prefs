@@ -1,6 +1,6 @@
 
 {
-  "name": "react-native-krazy-rn-shared-prefs",
+  "name": "react-native-shared-prefs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
