@@ -59,3 +59,4 @@ typings/
 
 # Android
 android/.gradle
+android/build

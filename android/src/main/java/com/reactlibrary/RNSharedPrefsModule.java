@@ -3,8 +3,6 @@ package com.reactlibrary;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -19,6 +17,10 @@ public class RNSharedPrefsModule extends ReactContextBaseJavaModule {
   public RNSharedPrefsModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
+  }
+
+  public void setSharedPreference(String value) {
+      SharedPreferences prefs = getApplicationContext().getSharedPreferences("sharedprefone", Context.MODE_WORLD_READABLE);
   }
 
   @Override
